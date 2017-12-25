@@ -19,6 +19,11 @@
     margin-left: 10px;
 }
 
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    margin-left: 10px;
+}
+
 .dropdown-menu.show{
     background-color: #9e8d63;
 }
@@ -27,6 +32,7 @@
 
 body{
     background-color: beige;
+
 }
 
 .pagetitle{
@@ -107,7 +113,20 @@ h4{
     background-color: #665c34; /* Add a dark-grey background on hover */
 }
 
+
+
+
 /* --------- Index ----------*/
+
+/* --------- De hut ----------*/
+
+ul{
+    list-style-type: none;
+}
+
+/* --------- over ons ----------*/
+
+
 
 
 
@@ -162,10 +181,86 @@ h4{
     color: #fff;
 }
 
+.sprites{
+    margin: 10px;
+}
+
+
+
+.facebook{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -50px -50px;
+}
+
+.facebook:hover{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -50px -150px;
+}
+
+.twitter{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -150px -50px;
+}
+
+.twitter:hover{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -150px -150px;
+}
+
+.instagram{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -250px -50px;
+}
+
+.instagram:hover{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -250px -150px;
+}
+
+.googleplay{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -350px -50px;
+}
+
+.googleplay:hover{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../images/sprites.png');
+    background-position: -350px -150px;
+}
+
+
 /* --------- Media querry ----------*/
 
 
 @include media-breakpoint-up(xs) {
+
+    .overons{
+    column-count: 1;
+    }
+
+    .disclaimer{
+        column-count: 1;
+    }
+
+    .sprites{
+        margin-left: 10%;
+    }
 
     .footerline{
         border-bottom: 2px solid #665c34;
@@ -174,6 +269,14 @@ h4{
 }
 
 @include media-breakpoint-up(md) {
+
+    .overons{
+    column-count: 2;
+    }
+
+    .disclaimer{
+        column-count: 2;
+    }
 
     .footertext{
         border-right: 2px solid #665c34;
@@ -186,6 +289,8 @@ h4{
 }
 
 @include media-breakpoint-up(xl) {
+
+
 
     /* --------- Home_links ----------*/
     .transition{
