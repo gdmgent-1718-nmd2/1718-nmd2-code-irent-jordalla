@@ -1,5 +1,43 @@
-<nav class="navbar fixed-bottom navbar-light bg-light">
-{%- if site.show-style-guide %}
+<div class="container-fluid testfooter">
+<div class="col-12 text-center">
+    <img src="images/logo5.png" alt="logo" class="footerlogo img-fluid">
+</div>
+
+<div class="row text-center align-middle">
+    <div class="col-xs-12 col-md-4 footertext">                
+        <div class="text-center ">
+            <a class="footer_nav" href="index.html">home</a>
+            <a class="footer_nav" href="dehut.html">De Hut</a>
+            <a class="footer_nav" href="overons.html">Over ons</a>
+            <a class="footer_nav" href="contact.html">Contact</a>
+            <a class="footer_nav" href="betalen/reserveren_reserveren.html">Reserveren</a>
+        </div>
+
+    </div>
+
+<hr class="footerline">
+
+    <div class="col-xs-12 col-md-4 footertext">
+        <P>Industrieweg 323 <br> 9000 Gent</P>
+        <p>+32 425 254 268</p>
+        <p>Leafhouse@info.com</p>
+    </div>
+
+<hr class="footerline">
+
+    <div class="col-xs-12 col-md-4 footertext">
+        <P>Industrieweg 323 <br> 9000 Gent</P>
+        <p>+32 425 254 268</p>
+        <p>Leafhouse@info.com</p>
+    </div>
+
+    {%- if site.show-style-guide %}
     <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
-{%- endif %}
-</nav>
+    {%- endif %}
+
+    <div class="col-12" id="copyright">
+        <p>copyright 2017 by Jordi Allard</p>
+    </div>
+
+</div>
+</div>

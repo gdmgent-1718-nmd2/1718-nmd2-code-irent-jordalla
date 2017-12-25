@@ -1,0 +1,62 @@
+
+
+
+# - title: Home
+#  url: /index.html
+
+#- title: Team
+#  url: /team.html
+
+#- title: Series
+#  url: /series
+#  sublinks:
+#    - title: dr. Who
+#      url: /series/drwho.html
+#    - title: Dexter
+#      url: /series/dexter.html
+
+#- title: Contact
+#  url: /contact.html
+
+
+
+- title: Home
+  url: /index.html
+
+- title: De Hut
+  url: /dehut.html
+
+- title: Over Ons
+  url: /overons.html
+
+- title: Info
+  url: /info
+  sublinks:
+    - title: Activiteiten
+      url: /info/activiteiten.html
+    - title: Recensies
+      url: /info/recensies.html
+    - title: FAQ
+      url: /info/faq.html
+    - title: Disclaimer
+      url: /info/disclaimer.html
+
+- title: Contact
+  url: /contact.html
+
+#- title: Reserveren
+#  url: /reserveren.html
+
+#- title: Reserveren
+#  url: /betalen/reserveren_reserveren.html
+#  sublinks:
+#    - title: Reserveren
+#      url: /betalen/reserveren_reserveren.html
+#    - title: Registreren
+#      url: /betalen/reserveren_registreren.html
+#    - title: Bedankt
+#      url: /betalen/reserveren_bedankt.html
+      
+- title: Reserveren
+  url: /betalen/reserveren_reserveren.html
+

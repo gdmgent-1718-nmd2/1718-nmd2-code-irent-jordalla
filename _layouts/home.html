@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+
+{% include nav.html %}
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+
+
+{{ content }}
+{% include footer.html %}
+{% include scripts-bottom.html %}
+</body>
+</html>
