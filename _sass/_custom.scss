@@ -1,7 +1,23 @@
+$green:  #59b030;
+$primary: $green;
+
+$light-brown:  #9e8d63;
+$secondary: $light-brown;
+
+$dark-brown:  #665c34;
+$tertiary: $dark-brown;
+
+$beige:  #f5f5dc;
+$quaternary: $beige;
+
+$white:  #ffffff;
+$fifth: $white;
+
+
 /* --------- Navigation ----------*/
 
 .navbar.navbar-expand-lg.navbar-light{
-    background-color: #9e8d63;
+    background-color: $light-brown;
     z-index: 99;
 }
 
@@ -15,37 +31,49 @@
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
-    color: #fff;
+    color: $white;
     margin-left: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: #fff;
+    color: $white;
     margin-left: 10px;
 }
 
 .dropdown-menu.show{
-    background-color: #9e8d63;
+    background-color: $light-brown;
 }
 
 /* --------- body algemeen ----------*/
 
 body{
-    background-color: beige;
+    background-color: $beige;
+    font-family: 'Dosis', sans-serif;
+    line-height: 140%;
 
 }
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Courgette', cursive;
+}
+
 
 .pagetitle{
     margin-top: 50px;
 }
 
 a{
-    color: #9e8d63;
+    color: $dark-brown;
+}
+
+a:hover{
+    color: $dark-brown;
 }
 
 .btn{
     width: 100%;
     margin: 20px 0px;
+    color: $white;
 }
 
 img{
@@ -58,16 +86,16 @@ img{
 }
 
 .box{
-    padding: 20px 0px 50px 0px; ;
+    padding: 50px 0px 50px 0px; ;
     border-radius: 20px;
-    border-top: solid 2px #665c34;
-    border-bottom: solid 2px #665c34;
+    border-top: solid 2px $dark-brown;
+    border-bottom: solid 2px $dark-brown;
     margin: 20px auto;
 }
 
 textarea{
     width: 100%;
-    height: 150px;
+    height: 87%;
     border-radius: 20px;
 }
 
@@ -78,15 +106,14 @@ textarea{
 }
 
 h1,h2,h3{
-    color: #665c34;
+    color: $dark-brown;
     margin: 20px auto;
 }
 
 h4{
-    color: #665c34;
+    color: $dark-brown;
     margin: 20px 0px;
     display: block;
-    text-decoration: underline;
 }
 
 .textbox{
@@ -98,25 +125,27 @@ h4{
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 999; /* Make sure it does not overlap */
-    color: #59b030; /* Text color */
+    color: $green; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    border-radius: 20px; /* Rounded corners */
-    font-size: 24px;
-    background-color: beige;
+    border-radius: 50%; /* Rounded corners */
+    font-size: 30px;
+    background-color: $beige;
     border: none;
+    width: 50px;
+    height: 50px;
 }
 
 #myBtn:hover {
-    background-color: #665c34; /* Add a dark-grey background on hover */
+    background-color: $dark-brown; /* Add a dark-grey background on hover */
 }
 
 
-
-
 /* --------- Index ----------*/
+
+
 
 /* --------- De hut ----------*/
 
@@ -125,9 +154,6 @@ ul{
 }
 
 /* --------- over ons ----------*/
-
-
-
 
 
 /* --------- Recensie ----------*/
@@ -152,6 +178,41 @@ ul{
 /* --------- FAQ ----------*/
 
 
+/* --------- Contact ----------*/
+
+iframe{
+    width: 100%;
+    height: 350px;
+
+}
+
+.contact{
+    margin: 50px;
+}
+
+/* --------- Reserveren ----------*/
+
+.month{
+    background-color: $light-brown;
+    border-radius: 20px;
+    color: $white;
+}
+
+i{
+    font-size: 30px !important;
+}
+
+.fa-calendar{
+    margin: 20px;
+}
+
+.invisable{
+    display: none;
+}
+
+.form-control{
+    border-radius: 10px;
+}
 
 /* --------- Footer ----------*/
 
@@ -160,10 +221,9 @@ ul{
 }
 
 .testfooter{
-    background-color: #9e8d63;
+    background-color: $light-brown;
     margin-top: 50px;
-    color: white;
-}
+    color: $white;
 
 .footerlogo{
     width: 400px;
@@ -171,21 +231,20 @@ ul{
 }
 
 #copyright{
-    background-color: #665c34;
-    color: #fff;
+    background-color: $dark-brown;
+    color: $white;
 }
 
 .footer_nav{
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: $white;
 }
 
 .sprites{
-    margin: 10px;
+    margin: auto auto;
+    display: block;
 }
-
-
 
 .facebook{
     width: 50px;
@@ -259,11 +318,13 @@ ul{
     }
 
     .sprites{
-        margin-left: 10%;
+        margin: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footerline{
-        border-bottom: 2px solid #665c34;
+        border-bottom: 2px solid $dark-brown;
         width: 25%;
     }
 }
@@ -275,11 +336,11 @@ ul{
     }
 
     .disclaimer{
-        column-count: 2;
+        column-count: 3;
     }
 
     .footertext{
-        border-right: 2px solid #665c34;
+        border-right: 2px solid $dark-brown;
         border-bottom: none;
     }
 
@@ -289,8 +350,6 @@ ul{
 }
 
 @include media-breakpoint-up(xl) {
-
-
 
     /* --------- Home_links ----------*/
     .transition{
@@ -314,7 +373,7 @@ ul{
         opacity:1;
     }
     .product-div2:hover img{
-        opacity:0.2;
+        opacity:0;
     }
     .text-view{
         position:absolute;
@@ -324,6 +383,5 @@ ul{
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity:0;
-        color: #9e8d63;
+        color: $light-brown;
     }
-}

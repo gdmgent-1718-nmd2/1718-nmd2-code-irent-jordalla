@@ -8,30 +8,37 @@ title: Contact
 
 <div class="container">
 
+    <div class="container">
+        <div class="row">
+                <iframe class="images" frameborder="0" scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=Cyberborg%20Bodyart%2C%20Bangka%2C%20Jakarta%2C%20Indonesia&key=AIzaSyCGz8WzqxQw1OwHWey3LCTjqKFG9feCxP4"></iframe>
+        </div>
+    </div>
 
-
-    <div class="row">
+    <div class="row contact ">
         <div class="col-sm-12 text-center">
-            <p>Industrieweg 323 <br> 9000 Gent</p>
-            <p>+32 000 000 000</p>
+            <p>Rue des Aguesses 60 <br> 6940 Durbuy </p>
+            <p>+32 425 254 268</p>
             <p>Leafhouse@info.com</p>
         </div>
     </div>
+
+    <div class="container">
+    <h2 class="text-center ">Vragen?</h2>
     
-
-  <h2>Vragen?</h2>
-    <div class="row box">               
-        <div class="col-xs-12 col-md-6">
-            <form action="/action_page.php">
-            <input class="textbox" type="text" name="fname" placeholder="Naam"><br>
-            <input class="textbox" type="text" name="lname" placeholder="Voornaam"><br>
+        <div class="row box">               
+            <div class="col-xs-12 col-md-6">
+            <form>
+                <input class="form-control" type="text" name="fname" placeholder="Naam"><br>
+                <input class="form-control" type="text" name="lname" placeholder="Voornaam"><br>
+                <input class="form-control" type="text" name="lname" placeholder="Onderwerp"><br>
             </form>
-        </div>
-        <div class="col-xs-12 col-md-6">
+            </div>
 
-            <textarea></textarea>
-        
+            <div class="col-xs-12 col-md-6">
+                <textarea name="user-message" id="user-message" class="form-control" placeholder="Bericht"></textarea>
+            </div>
+           <button class="btn btn-primary" onclick="alert('Uw bericht is verzonden')">Verzenden</button> 
+           
         </div>
-        <button class="btn btn-primary" onclick="alert('Uw bericht is verzonden')">Verzenden</button>
     </div>    
 </div>
