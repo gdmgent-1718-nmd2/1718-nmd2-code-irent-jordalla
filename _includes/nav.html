@@ -19,18 +19,18 @@
             
             {% if link.sublinks %}
                 <li class="nav-item dropdown {{ class }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                    <a href="{{ site.baseurl }}{{ link.url }}" class=" nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         {% for sublink in link.sublinks %}
                                 <li class="dropdown-item">
-                                    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                    <a class=" nav-link{{ class }}" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                                 </li>
                         {% endfor %}
                     </ul>
                 </li>
             {% else %}
                 <li class="nav-item{{ class }}">
-                    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    <a class=" nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 </li>
             {% endif %}
         {% endfor %}

@@ -33,15 +33,18 @@ $fifth: $white;
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
     color: $white;
     margin-left: 10px;
+    
 }
 
-.navbar-light .navbar-nav .nav-link{
-    color: $white;
+.navbar-light .navbar-nav .nav-link {
+    color: $white !important;
     margin-left: 10px;
 }
 
+
+
 .dropdown-menu.show{
-    background-color: $light-brown;
+    background-color: $light-brown !important;
 }
 
 /* --------- body algemeen ----------*/
@@ -50,7 +53,7 @@ body{
     background-color: $beige;
     font-family: 'Dosis', sans-serif;
     line-height: 140%;
-
+    font-size: 18px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -74,6 +77,17 @@ a:hover{
     width: 100%;
     margin: 20px 0px;
     color: $white;
+}
+
+.buttons{
+    background-color: $green;
+    font-size: 25px;
+}
+
+.buttons:hover{
+    background-color: transparent;
+    border: 1px solid $green;
+    color: $green;
 }
 
 img{
@@ -142,10 +156,7 @@ h4{
     background-color: $dark-brown; /* Add a dark-grey background on hover */
 }
 
-
 /* --------- Index ----------*/
-
-
 
 /* --------- De hut ----------*/
 
@@ -154,7 +165,6 @@ ul{
 }
 
 /* --------- over ons ----------*/
-
 
 /* --------- Recensie ----------*/
 
@@ -177,13 +187,11 @@ ul{
 
 /* --------- FAQ ----------*/
 
-
 /* --------- Contact ----------*/
 
 iframe{
     width: 100%;
     height: 350px;
-
 }
 
 .contact{
@@ -224,6 +232,7 @@ i{
     background-color: $light-brown;
     margin-top: 50px;
     color: $white;
+}
 
 .footerlogo{
     width: 400px;
@@ -303,9 +312,7 @@ i{
     background-position: -350px -150px;
 }
 
-
 /* --------- Media querry ----------*/
-
 
 @include media-breakpoint-up(xs) {
 
@@ -385,3 +392,4 @@ i{
         opacity:0;
         color: $light-brown;
     }
+}

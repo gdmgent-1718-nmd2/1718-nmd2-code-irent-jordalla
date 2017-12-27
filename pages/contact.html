@@ -8,11 +8,7 @@ title: Contact
 
 <div class="container">
 
-    <div class="container">
-        <div class="row">
-                <iframe class="images" frameborder="0" scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=Cyberborg%20Bodyart%2C%20Bangka%2C%20Jakarta%2C%20Indonesia&key=AIzaSyCGz8WzqxQw1OwHWey3LCTjqKFG9feCxP4"></iframe>
-        </div>
-    </div>
+    <div class="images" id="map" style="width:100%;height:400px;"></div>
 
     <div class="row contact ">
         <div class="col-sm-12 text-center">
@@ -37,8 +33,24 @@ title: Contact
             <div class="col-xs-12 col-md-6">
                 <textarea name="user-message" id="user-message" class="form-control" placeholder="Bericht"></textarea>
             </div>
-           <button class="btn btn-primary" onclick="alert('Uw bericht is verzonden')">Verzenden</button> 
+           <button class="btn buttons" onclick="alert('Uw bericht is verzonden')">Verzenden</button> 
            
         </div>
     </div>    
 </div>
+
+<script>
+      function initMap() {
+        var myLatLng = {lat: 50.335916, lng: 5.449970};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map
+        });
+      }
+</script>
