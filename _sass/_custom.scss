@@ -343,7 +343,7 @@ i{
     }
 
     .disclaimer{
-        column-count: 3;
+        column-count: 2;
     }
 
     .footertext{
@@ -357,6 +357,10 @@ i{
 }
 
 @include media-breakpoint-up(xl) {
+
+    .disclaimer{
+        column-count: 3;
+    }
 
     /* --------- Home_links ----------*/
     .transition{
